@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Manasa Taddi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <nav id="sandwich-nav">
+      <div class="logo">Manasa Taddi</div>
+      <div class="sandwich-menu">
+        <div class="sandwich-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>      
+    </nav>
+    <section id = "profile">
+      <div clss="section-pic-container">
+        <img src="./assets/about-pic.JPG" alt="Manasa Taddi profile picture" style="width:568px;">
+
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Manasa Taddi</h1>
+        <p class="section-text-p2">Student</p>
+        <div class="btn-container">
+         
+          <button class="btn btn-color-1" onclick="location.href='#contact'" >Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/manasataddi/'"/>
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/manasataddi'"/>
+
+        </div>
+      </div>    
+    
+    </section>
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="titte">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img src="./assets/profile-pic.jpeg" alt="Profile Picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!-- <div class="details-container">
+              <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+              <h3>Experience</h3>
+              <p>Student<br />Computer Science </p>
+            </div> -->
+            <div class="details-container" style="max-width: 300px; margin: auto;">
+              <img src="./assets/education.png" alt="education icon" class="icon"/>
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />Computer Science </p>
+            </div>
+          </div>
+          <div class="text-container large-text">
+            <p> Hello! I am Manasa Taddi. I am a computer science student currently in my seinor year about to graduate in May 2024. I love bringing together my analytical and artistic skills together to build useful, functional, and good-looking websites. Although I am CS student, my main passion is art and design. I enjoy brining my creative side into my projects.</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+    </section>
+    <section id="experience" style="height: inherit;">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers experiences-flex">
+          <div class="details-container experiences-flex-child">
+            <h3>Quality Analyst Intern</h3>
+            <p><b>WiseDoc</b></p>
+            <p class="experience-description"></p>
+          </div>
+          <div class="details-container experiences-flex-child">
+            <h3>Graphics Designer</h3>
+            <p><b>St. Joseph Youth Alliance</b></p>
+            <p class="experience-description"></p>         
+          </div>
+          <div class="details-container experiences-flex-child">
+            <h3>Career Ambassador</h3>
+            <p><b>Northwest Missouri State University</b></p>
+            <p class="experience-description"></p>         
+          </div>
+          <div class="details-container experiences-flex-child">
+            <h3>Student Ambassador</h3>
+            <p><b>Northwest Missouri State University</b></p>
+            <p class="experience-description"></p>         
+          </div>
+          <div class="details-container experiences-flex-child">
+            <h3>CSIS Ambassador</h3>
+            <p><b>Northwest Missouri State University</b></p>
+            <p class="experience-description"></p>         
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/> 
+    </section>
+    <section id="projects" style="height: inherit;">
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container max-container">
+            <div class="article-container">
+              <img src="./assets/blackjack-pic.png" alt="Project 1" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Blackjack Game</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/manasataddi/Blackjack'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://manasataddi.github.io/Blackjack/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container max-container">
+            <div class="article-container">
+              <img src="./assets/swordfighter-pic.png" alt="Project 2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Sword Fighter Game</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/manasataddi/Sword-Fighter'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://manasataddi.github.io/Sword-Fighter/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container max-container">
+            <div class="article-container">
+              <img src="./assets/alarmclock-pic.png" alt="Project 3" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Alram Clock</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/manasataddi/Alarm-Clock'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://manasataddi.github.io/Alarm-Clock/'">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container max-container">
+            <div class="article-container">
+              <img src="./assets/hogwartstracker-pic.png" alt="Project 1" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Hogwarts Tracker</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/manasataddi/Hogwarts-Tracker'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://manasataddi.github.io/Hogwarts-Tracker/'">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/> 
+    </section>
+    <section id="contact">
+      <p class="section-text-p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon Contact-icon email-icon"/>
+          <p><a href="mailto:manasataddi05@gmail.com">manasataddi05@gmail.com</a></p>      
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon Contact-icon"/>
+          <p><a href="https://www.linkedin.com/in/manasataddi/">LinkedIn</a></p>      
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>copyright &#169; 2023 Manasa Taddi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>    
+  </body>
+</html>
