@@ -7,6 +7,7 @@
     padding: 0;
 }
 
+
 body {
     font-family: 'Poppins', sans-serif; 
     background-color: #edede9;
@@ -47,6 +48,11 @@ a:hover {
 .logo {
     font-size: 2rem;
 }
+.logo:hover {
+    cursor: default;
+  }
+
+/*SANDWICH NAV */
 
 #sandwich-nav {
     display: none;
@@ -132,7 +138,9 @@ a:hover {
  .section-container {
     display: flex;
  }
+
 /* PROFILE SECTION */
+
 #profile {
     display: flex;
     justify-content: center;
@@ -140,8 +148,7 @@ a:hover {
     height: 80vh;
 }
 img {
-    border-radius: 50%;
-    
+    border-radius: 50%;    
   }
 .section-pic-container {
     display: flex;
@@ -174,11 +181,14 @@ img {
     gap: 1rem;
 }
 /* ICONS */
+
 .icon {
     cursor: pointer;
     height: 2rem;
 }
+
 /*BUTTONS*/
+
 .btn-container {
     display: flex;
     justify-content: center;
@@ -215,9 +225,12 @@ img {
 .btn-container {
     gap: 1rem;
 }
+
 /* ABOUT SECTION */
+
 #about {
     position: relative;
+    text-align: center;
 }
 .about-containers {
     gap: 2rem;
@@ -312,10 +325,10 @@ article .icon {
 }
 
 .experiences-flex-child {
-    /* max-width: 500px; */
+    max-width: 500px; 
     width: 30%;
     flex: auto;
-    max-width: 418px;
+    /* max-width: 418px; */
 }
 
 .max-container {
@@ -376,6 +389,3 @@ article .icon {
 .email-icon {
     height: 2.5rem;
 }
-
-/* FOOTER */
-
